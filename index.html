@@ -14,17 +14,17 @@
 <!-- Open Graph / Twitter Card -->
 <meta property="og:title" content="Buen Vecino Bajo Cauca — Código de Convivencia Ciudadana">
 <meta property="og:description" content="Lo que dice la Ley 1801 de 2016 sobre ruido, mascotas, basuras, licor en la calle y peleas. Con los valores de multa actualizados a 2026.">
-<meta property="og:image" content="https://vibraspositivashm.github.io/convivencia-bajo-cauca/og-image.png">
+<meta property="og:image" content="https://haroldco45.github.io/buen-vecino-bajo-cauca/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://vibraspositivashm.github.io/convivencia-bajo-cauca/">
+<meta property="og:url" content="https://haroldco45.github.io/buen-vecino-bajo-cauca/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Biblioteca Legal Colombiana — Vibras Positivas HM">
 <meta property="og:locale" content="es_CO">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Buen Vecino Bajo Cauca — Código de Convivencia Ciudadana">
 <meta name="twitter:description" content="Lo que dice la Ley 1801 de 2016 sobre ruido, mascotas, basuras, licor en la calle y peleas. Con los valores de multa actualizados a 2026.">
-<meta name="twitter:image" content="https://vibraspositivashm.github.io/convivencia-bajo-cauca/og-image.png">
+<meta name="twitter:image" content="https://haroldco45.github.io/buen-vecino-bajo-cauca/og-image.png">
 
 <style>
 :root{
@@ -490,7 +490,7 @@ function toast(msg){ var t=document.getElementById("toast"); t.textContent=msg; 
 function bogota(opts){ return new Intl.DateTimeFormat("es-CO",
   Object.assign({timeZone:"America/Bogota"},opts)).format(new Date()); }
 
-var SITE = "https://vibraspositivashm.github.io/convivencia-bajo-cauca/";
+var SITE = "https://haroldco45.github.io/buen-vecino-bajo-cauca/";
 function wa(text){ window.open("https://wa.me/?text="+encodeURIComponent(text),"_blank"); }
 
 /* ---------- datos: comportamientos ---------- */
@@ -817,16 +817,14 @@ function datos(){
   };
 }
 var PLANTILLAS = {
-vecino: function(x){ return
-"Caucasia, "+hoyLargo()+"\n\nEstimado vecino:\n\n"
+vecino: function(x){ return "Caucasia, "+hoyLargo()+"\n\nEstimado vecino:\n\n"
 +"Le escribo con todo respeto y con el ánimo de resolver entre nosotros una situación, antes de acudir a cualquier autoridad.\n\n"
 +x.h+"\n\n"
 +"El Código Nacional de Seguridad y Convivencia Ciudadana (Ley 1801 de 2016) establece en su artículo 26 que todos tenemos el deber de comportarnos de manera favorable a la convivencia. Estoy seguro de que podemos arreglarlo hablando.\n\n"
 +"Quedo atento a que conversemos cuando usted disponga.\n\nCon aprecio,\n\n"
 +x.n+"\nC.C. "+x.c+"\n"+x.d+" — Barrio "+x.b;
 },
-jac: function(x){ return
-"Caucasia, "+hoyLargo()+"\n\nSeñores\nJUNTA DE ACCIÓN COMUNAL — BARRIO "+x.b.toUpperCase()+"\nComité de Convivencia y Conciliación\nE.  S.  D.\n\n"
+jac: function(x){ return "Caucasia, "+hoyLargo()+"\n\nSeñores\nJUNTA DE ACCIÓN COMUNAL — BARRIO "+x.b.toUpperCase()+"\nComité de Convivencia y Conciliación\nE.  S.  D.\n\n"
 +"ASUNTO: Solicitud de mediación vecinal\n\n"
 +"Yo, "+x.n+", identificado con cédula de ciudadanía No. "+x.c+", residente en "+x.d+" del barrio "+x.b+", me permito solicitar la mediación del Comité de Convivencia y Conciliación de la Junta, en los siguientes términos:\n\n"
 +"HECHOS\n"+x.h+"\n\n"
@@ -834,8 +832,7 @@ jac: function(x){ return
 +"SOLICITUD\nQue se cite a las partes a una audiencia de mediación en la sede de la Junta, con el fin de llegar a un acuerdo y evitar acudir a la Inspección de Policía.\n\n"
 +"Atentamente,\n\n"+x.n+"\nC.C. "+x.c+"\nTeléfono: ______________";
 },
-querella: function(x){ return
-"Caucasia, "+hoyLargo()+"\n\nSeñor\nINSPECTOR DE POLICÍA MUNICIPAL\nAlcaldía de Caucasia — Antioquia\nE.  S.  D.\n\n"
+querella: function(x){ return "Caucasia, "+hoyLargo()+"\n\nSeñor\nINSPECTOR DE POLICÍA MUNICIPAL\nAlcaldía de Caucasia — Antioquia\nE.  S.  D.\n\n"
 +"ASUNTO: Querella por comportamiento contrario a la convivencia (Ley 1801 de 2016)\n\n"
 +"Yo, "+x.n+", mayor de edad, identificado con cédula de ciudadanía No. "+x.c+", residente en "+x.d+" del barrio "+x.b+" de este municipio, presento QUERELLA con base en los siguientes\n\n"
 +"HECHOS\n1. "+x.h+"\n2. He intentado resolver la situación mediante diálogo directo con el presunto infractor, sin obtener resultado.\n3. (Indique aquí las gestiones previas: fechas, testigos, mediación en la JAC, llamadas a la Policía.)\n\n"
@@ -846,8 +843,7 @@ querella: function(x){ return
 +"NOTIFICACIONES\nDirección: "+x.d+", barrio "+x.b+", Caucasia\nTeléfono: ______________\nCorreo: ________________\n\n"
 +"Atentamente,\n\n"+x.n+"\nC.C. "+x.c;
 },
-frente: function(x){ return
-"Caucasia, "+hoyLargo()+"\n\nSeñor\nCOMANDANTE DE ESTACIÓN\nPolicía Nacional — Caucasia, Antioquia\nE.  S.  D.\n\n"
+frente: function(x){ return "Caucasia, "+hoyLargo()+"\n\nSeñor\nCOMANDANTE DE ESTACIÓN\nPolicía Nacional — Caucasia, Antioquia\nE.  S.  D.\n\n"
 +"ASUNTO: Solicitud de conformación de Frente de Seguridad Local\n\n"
 +"Respetado Comandante:\n\n"
 +"Los residentes del barrio "+x.b+", organizados a través de nuestra Junta de Acción Comunal, solicitamos su apoyo para conformar un Frente de Seguridad Local articulado con el Modelo Nacional de Vigilancia Comunitaria por Cuadrantes.\n\n"
@@ -860,7 +856,12 @@ frente: function(x){ return
 };
 document.getElementById("genCarta").addEventListener("click", function(){
   var t = document.getElementById("cTipo").value;
-  document.getElementById("cartaTxt").value = PLANTILLAS[t](datos());
+  var fn = PLANTILLAS[t];
+  if(typeof fn !== "function"){ toast("Elige primero el tipo de documento"); return; }
+  if(!document.getElementById("cNombre").value.trim()){ toast("Escribe tu nombre para generar el documento"); return; }
+  var texto = fn(datos());
+  if(!texto){ toast("No se pudo generar el documento. Intenta de nuevo"); return; }
+  document.getElementById("cartaTxt").value = texto;
   var o = document.getElementById("cartaOut");
   o.style.display="block"; o.scrollIntoView({behavior:"smooth",block:"start"});
 });
@@ -938,7 +939,7 @@ document.getElementById("fecha").textContent =
 
 if("serviceWorker" in navigator && location.protocol.indexOf("http")===0){
   window.addEventListener("load", function(){
-    navigator.serviceWorker.register("sw.js").catch(function(){});
+    navigator.serviceWorker.register("sw.js?v=2").catch(function(){});
   });
 }
 </script>
