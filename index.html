@@ -14,17 +14,17 @@
 <!-- Open Graph / Twitter Card -->
 <meta property="og:title" content="Buen Vecino Bajo Cauca — Código de Convivencia Ciudadana">
 <meta property="og:description" content="Lo que dice la Ley 1801 de 2016 sobre ruido, mascotas, basuras, licor en la calle y peleas. Con los valores de multa actualizados a 2026.">
-<meta property="og:image" content="https://haroldco45.github.io/buen-vecino-bajo-cauca/og-image.png">
+<meta property="og:image" content="https://buen-vecino-bajo-cauca.netlify.app/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://haroldco45.github.io/buen-vecino-bajo-cauca/">
+<meta property="og:url" content="https://buen-vecino-bajo-cauca.netlify.app/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Biblioteca Legal Colombiana — Vibras Positivas HM">
 <meta property="og:locale" content="es_CO">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Buen Vecino Bajo Cauca — Código de Convivencia Ciudadana">
 <meta name="twitter:description" content="Lo que dice la Ley 1801 de 2016 sobre ruido, mascotas, basuras, licor en la calle y peleas. Con los valores de multa actualizados a 2026.">
-<meta name="twitter:image" content="https://haroldco45.github.io/buen-vecino-bajo-cauca/og-image.png">
+<meta name="twitter:image" content="https://buen-vecino-bajo-cauca.netlify.app/og-image.png">
 
 <style>
 :root{
@@ -490,7 +490,7 @@ function toast(msg){ var t=document.getElementById("toast"); t.textContent=msg; 
 function bogota(opts){ return new Intl.DateTimeFormat("es-CO",
   Object.assign({timeZone:"America/Bogota"},opts)).format(new Date()); }
 
-var SITE = "https://haroldco45.github.io/buen-vecino-bajo-cauca/";
+var SITE = "https://buen-vecino-bajo-cauca.netlify.app/";
 function wa(text){ window.open("https://wa.me/?text="+encodeURIComponent(text),"_blank"); }
 
 /* ---------- datos: comportamientos ---------- */
@@ -801,7 +801,7 @@ function mostrarScore(){
 document.getElementById("resetQuiz").addEventListener("click", pintarQuiz);
 document.getElementById("shareQuiz").addEventListener("click", function(){
   var ok = respuestas.reduce(function(a,r,i){ return a + (r===QUIZ[i].c?1:0); },0);
-  wa("Saqué "+ok+"/8 en el test de convivencia del barrio 🏘️\n¿Te atreves? "+SITE);
+  wa("Saqué "+ok+"/8 en el test de convivencia del barrio \uD83C\uDFD8\uFE0F\n¿Te atreves? "+SITE);
 });
 pintarQuiz();
 
@@ -894,18 +894,18 @@ document.getElementById("normas").innerHTML = LEYES.map(function(l){
 }).join("");
 
 /* ---------- compartir ---------- */
-var MSG = "🏘️ *BUEN VECINO BAJO CAUCA*\nEl Código de Convivencia explicado para nuestro barrio.\n\n"
+var MSG = "\uD83C\uDFD8\uFE0F *BUEN VECINO BAJO CAUCA*\nEl Código de Convivencia explicado para nuestro barrio.\n\n"
  + "Mira cuánto cuesta hoy poner el picó a todo volumen, no recoger a tu perro o tirar basura al lote.\n"
  + "Incluye el Pacto del Buen Vecino y las cartas listas para llenar.\n\n"
- + "👉 " + SITE + "\n\nEl Triángulo · Colinas del Portal · Altos de San Juan";
+ + "\uD83D\uDC49 " + SITE + "\n\nEl Triángulo · Colinas del Portal · Altos de San Juan";
 ["shareTop","shareBottom"].forEach(function(id){
   document.getElementById(id).addEventListener("click", function(){ wa(MSG); });
 });
 document.getElementById("sharePacto").addEventListener("click", function(){
   var on = (load("pacto")||"").split(",").filter(function(s){return s!=="";});
-  var txt = "✅ *MI COMPROMISO CON EL BARRIO*\nCumplo "+on.length+" de los 10 acuerdos del Pacto del Buen Vecino.\n\n";
+  var txt = "\u2705 *MI COMPROMISO CON EL BARRIO*\nCumplo "+on.length+" de los 10 acuerdos del Pacto del Buen Vecino.\n\n";
   on.forEach(function(i){ txt += "• "+PACTO[+i][0]+"\n"; });
-  txt += "\n¿Cuántos cumples tú?\n👉 "+SITE;
+  txt += "\n¿Cuántos cumples tú?\n\uD83D\uDC49 "+SITE;
   wa(txt);
 });
 
