@@ -1,5 +1,5 @@
 /* Buen Vecino Bajo Cauca — Vibras Positivas HM */
-var CACHE = "buen-vecino-v1";
+var CACHE = "buen-vecino-v2";
 var ASSETS = ["./", "./index.html", "./manifest.json", "./icon-192.png", "./icon-512.png", "./og-image.png"];
 
 self.addEventListener("install", function (e) {
